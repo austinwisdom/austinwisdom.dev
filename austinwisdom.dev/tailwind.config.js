@@ -10,3 +10,12 @@ export default {
   plugins: [],
 }
 
+// colors: {
+//   transparent: 'transparent',
+//   current: 'currentColor',
+//   'redwhite': '##FFEDEF',
+//   'lightblack': '#1f1f1f',
+//   'black': '#181818',
+//   'red': '#ff001b',
+// }
+
