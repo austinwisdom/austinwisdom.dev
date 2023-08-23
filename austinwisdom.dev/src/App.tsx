@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import awLogoLarge from "./assets/images/logo/aw.svg"
-import logoGif from "./assets/images/logo/aw.gif"
-import awLogo from "./assets/images/logo/logoSmall.png"
+// import awLogoLarge from "./assets/images/logo/aw.svg"
+// import logoGif from "./assets/images/logo/aw.gif"
+// import awLogo from "./assets/images/logo/logoSmall.png"
 
 import './App.css'
 
