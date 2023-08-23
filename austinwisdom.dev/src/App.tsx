@@ -11,26 +11,26 @@ function App() {
 
   return (
   <div className='bg-neutral-900 w-full h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'>
-    <nav className='justify-end flex flex-row'>
-      {/* <img className='h-16' src={awLogo} /> */}
+    {/* <nav className='justify-end flex flex-row'>
+      
       <ul className='bg-neutral-950 rounded-2xl w-1/2 mx-7 h-10 px-4 flex flex-row content-end my-5'>
         <li className='list-none text-red-100 mx-4 self-center'>
           <a className='transition hover:drop-shadow-3xl cursor-pointer'>home
-            {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
+            <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span>
           </a>
         </li>
         <li className='list-none text-red-100 mx-4 self-center'>
           <a className='transition hover:drop-shadow-3xl cursor-pointer'>about
-            {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
+            <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span>
           </a>
         </li>
         <li className='list-none text-red-100 mx-4 self-center'>
           <a className='transition hover:drop-shadow-3xl cursor-pointer'>projects
-            {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
+            <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span>
           </a>
         </li>
       </ul>
-    </nav>
+    </nav> */}
       <section className='flex justify-end'>
         {/* <img className='h-1/2 w-1/2' src={awLogoLarge} /> */}
         <div className='mx-40 my-40'>
