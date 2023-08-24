@@ -94,14 +94,14 @@ const ProjectsPage = () => {
                         <div className="bg-red-100 rounded-2xl sm:w-1/2 mx-7 h-full px-4 flex flex-col justify-center content-center p-4 my-10">
                             <ul>
                                 <li className="py-2">
-                                    <h1>name: <span className="text-red-500">{projectModal.projectName}</span></h1>
+                                    <h1 className="text-red-500">name: <span className="text-neutral-950">{projectModal.projectName}</span></h1>
                                 </li>
                                 <li className="py-2">
-                                    <p>desc: <span className="text-red-500">{projectModal.description}</span></p>
+                                    <p className="text-red-500">desc: <span className="text-neutral-950">{projectModal.description}</span></p>
                                 </li>
-                                <li className="py-2">URL: <Link className="text-red-500" to={projectModal.link}>{projectModal.linkTitle}</Link></li>
+                                <li className="py-2 text-red-500">URL: <a target="_blank" className="text-neutral-950 hover:text-red-500" href={projectModal.link}>{projectModal.linkTitle}</a></li>
                                 <li className="py-2">
-                                    <p>stack: <span className="text-red-500">{projectModal.stack}</span></p>
+                                    <p className="text-red-500">stack: <span className="text-neutral-950">{projectModal.stack}</span></p>
                                 </li>
                             </ul>
                         </div>
