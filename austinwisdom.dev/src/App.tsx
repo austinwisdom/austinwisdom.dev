@@ -8,19 +8,19 @@ import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)
-  // const background:any = document.querySelector('#module')
-  // const root = document.documentElement;
+  const background:any = document.querySelector('#module')
+  const root = document.documentElement;
 
-  // root.addEventListener('mousemove', (e) => {
-  //   const x = e.clientX,
-  //   y = e.clientY;
-  //   background.style.transform = `translate(${-x / 20}px,${-y / 40}px)`;
-  // });
+  root.addEventListener('mousemove', (e) => {
+    const x = e.clientX,
+    y = e.clientY;
+    background.style.transform = `translate(${-x / 40}px,${-y / 40}px)`;
+  });
 
   return (
     <>
-  <div id='module' className='bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'>
-      <main className='flex justify-center sm:justify-end'>
+  <div className='bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'>
+      <main id='module' className='flex justify-center sm:justify-end'>
         <div className='my-96 sm:mx-40 sm:my-40'>
           <h1 className='text-red-100 text-6xl hover:cursor-default mt-14 sm:mt-0 transition hover:text-white'>Founder,</h1>
           <h1 className='text-red-100 text-6xl hover:cursor-default transition hover:text-white'>Educator,</h1>
