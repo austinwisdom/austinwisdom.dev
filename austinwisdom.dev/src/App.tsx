@@ -8,33 +8,21 @@ import './App.css'
 
 function App() {
   // const [count, setCount] = useState(0)
+  // const background:any = document.querySelector('#module')
+  // const root = document.documentElement;
+
+  // root.addEventListener('mousemove', (e) => {
+  //   const x = e.clientX,
+  //   y = e.clientY;
+  //   background.style.transform = `translate(${-x / 20}px,${-y / 40}px)`;
+  // });
 
   return (
-  <div className='bg-neutral-900 w-full h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'>
-    <nav className='justify-end flex flex-row'>
-      {/* <img className='h-16' src={awLogo} /> */}
-      <ul className='bg-neutral-950 rounded-2xl w-1/2 mx-7 h-10 px-4 flex flex-row content-end my-5'>
-        <li className='list-none text-red-100 mx-4 self-center'>
-          <a className='transition hover:drop-shadow-3xl cursor-pointer'>home
-            {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
-          </a>
-        </li>
-        <li className='list-none text-red-100 mx-4 self-center'>
-          <a className='transition hover:drop-shadow-3xl cursor-pointer'>about
-            {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
-          </a>
-        </li>
-        <li className='list-none text-red-100 mx-4 self-center'>
-          <a className='transition hover:drop-shadow-3xl cursor-pointer'>projects
-            {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
-          </a>
-        </li>
-      </ul>
-    </nav>
-      <section className='flex justify-end'>
-        {/* <img className='h-1/2 w-1/2' src={awLogoLarge} /> */}
-        <div className='mx-40 my-40'>
-          <h1 className='text-red-100 text-6xl transition hover:text-white'>Founder,</h1>
+    <>
+  <div id='module' className='bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'>
+      <section className='flex justify-center sm:justify-end'>
+        <div className='my-96 sm:mx-40 sm:my-40'>
+          <h1 className='text-red-100 text-6xl mt-14 sm:mt-0 transition hover:text-white'>Founder,</h1>
           <h1 className='text-red-100 text-6xl transition hover:text-white'>Educator,</h1>
           <h1 className='text-red-100 text-6xl transition hover:text-white'>Software Engineer</h1>
           <div className="flex gap-6 mt-6 mb-12">
@@ -53,8 +41,9 @@ function App() {
         </button> */}
         
       </div>
-      
+
     </div>
+  </>
   )
 }
 
