@@ -4,12 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import App from './App.tsx'
 import AboutPage from './pages/About/AboutPage.tsx';
+import ProjectsPage from './pages/ProjectsPage/ProjectsPage.tsx';
 import Header from './components/Header/Header.tsx';
 import './index.css'
 
 export enum ROUTES {
   HOME = '/',
-  ABOUT = '/about'
+  ABOUT = '/about',
+  PROJECTS = '/projects'
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -19,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path={ROUTES.HOME} element={<App />}/>
         <Route path={ROUTES.ABOUT} element={<AboutPage />}/>
+        <Route path={ROUTES.PROJECTS} element={<ProjectsPage />}/>
       </Routes>
     </Router>
   </React.StrictMode>,

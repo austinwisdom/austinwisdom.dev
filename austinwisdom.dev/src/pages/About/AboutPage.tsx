@@ -1,9 +1,9 @@
 
 const AboutPage = () => {
     return (
-        <section className="bg-neutral-900 w-screen h-screen">
+        <main className="bg-neutral-900 w-screen h-screen">
             
-        </section>
+        </main>
     );
 };
 
