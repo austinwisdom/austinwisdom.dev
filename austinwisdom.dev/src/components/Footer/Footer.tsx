@@ -22,7 +22,7 @@ const Footer = () => {
           </li>
         </ul> */}
         <div className="text-red-100 self-center h-full">
-            <p className="text-right px-5 py-5">© Austin Wisdom. All rights reserved.</p>
+            <p className="text-right px-5 py-5">© Austin Wisdom all rights reserved</p>
         </div>
       </footer>
     );
