@@ -54,7 +54,6 @@ const ProjectsPage = () => {
     const clickHandler = (projectId:string) => {
 
         const project = projects.find((id:any) => id.id === projectId)
-        console.log(project)
         setProjectModal(project)
     }
 
