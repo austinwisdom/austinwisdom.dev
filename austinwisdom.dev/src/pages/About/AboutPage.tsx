@@ -5,57 +5,57 @@ import awLogo from "../../assets/images/logo/aw.svg"
 
 const AboutPage = () => {
 
-    const [projectModal, setProjectModal]:[projectModal:any, setProjectModal:Function] = useState("")
+    // const [projectModal, setProjectModal]:[projectModal:any, setProjectModal:Function] = useState("")
 
-    const projects:any = ([
-        {
-            id: "bio",
-            projectName: "From small town USA to world traveler",
-            link: "https://xequematecompras.com.br/",
-            linkTitle: "xequematecompras.com.br",
-            image: "img url here",
-            description: "Originally from Alabama, I've had the privilege of living in more than 10 different countries around the world, and have become a travel fanatic along with my amazing wife Carla. ",
-            description2: "I've realized that the most precious things in life are spending time with friends and family, and filling our time on earth with as many adventures as possible."
-        },
-        {
-            id: "career",
-            projectName: "Started as a teacher now I'm here",
-            link: "https://ataraxia.tokyo/",
-            linkTitle: "ataraxia.tokyo",
-            image: "",
-            description: "After graduating in International Affairs (without much idea of how to use that degree), I got my first teaching job at a private school. From there I continued my journey as a teacher in Ourense, Spain and started my first business, an educational YouTube channel.",
-            description2: "",
-            stack: "React (Vite) with TypeScript, React-router-dom, SCSS / SASS",
-            deployment: "Netlify"
-        },
-        {
-            id: "resourceful",
-            projectName: "Resourceful",
-            link: "https://resourceful.tips/",
-            linkTitle: "resourceful.tips",
-            image: "img url here",
-            description: "This was a team collaboration featuring some of my former classmates, as we endeavored to create a coding-resource sharing platform to provide an all-inclusive repository of programming knowledge based on our bootcamp curriculum, and libraries, API's, and frameworks that we've learned since graduating. We simulates sprints, an agile-development environment, and dug in deep to successfully use TypeScript on the front and backend. We also cut our teeth on MongoDB and AWS EC2 cloud servers.",
-            stack: "React (Vite) with TypeScript, Node.js, Express, MongoDB, AWS EC2",
-            deployment: "AWS EC2, "
-        },
-        {
-            id: "mytutor",
-            projectName: "My Language Tutor",
-            link: "https://github.com/austinwisdom/austin-wisdom-my-language-tutor",
-            linkTitle: "github repo",
-            image: "img url here",
-            description: "For my bootcamp's capstone project, I built an AI-language tutor capable of providing endless hours of conversation in various languages. Designed as a prototype for an ed-tech startup, it allows users to sharpen their foreign-language skills at 90% less than the cost of hiring a conversation tutor. I used OpenAI's GPT-4 API to power the AI tutor, and implemented Azure coginitive speech services to provide on-demand text-to-speech services. I designed and built this app in two weeks, and have not deployed it yet. In the near future I will take time to overhaul it using my post-bootcamp skills and deploy it to its domain, mylanguagetutor.io.",
-            stack: "React (Vite) with TypeScript, React-router-dom, Tailwind, MySQL, OpenAI, Microsoft Azure",
-            deployment: "Netlify, Fly.io"
-        }
-    ]
-    )
+    // const projects:any = ([
+    //     {
+    //         id: "bio",
+    //         projectName: "From small town USA to world traveler",
+    //         link: "https://xequematecompras.com.br/",
+    //         linkTitle: "xequematecompras.com.br",
+    //         image: "img url here",
+    //         description: "Originally from Alabama, I've had the privilege of living in more than 10 different countries around the world, and have become a travel fanatic along with my amazing wife Carla. ",
+    //         description2: "I've realized that the most precious things in life are spending time with friends and family, and filling our time on earth with as many adventures as possible."
+    //     },
+    //     {
+    //         id: "career",
+    //         projectName: "Started as a teacher now I'm here",
+    //         link: "https://ataraxia.tokyo/",
+    //         linkTitle: "ataraxia.tokyo",
+    //         image: "",
+    //         description: "After graduating in International Affairs (without much idea of how to use that degree), I got my first teaching job at a private school. From there I continued my journey as a teacher in Ourense, Spain and started my first business, an educational YouTube channel.",
+    //         description2: "",
+    //         stack: "React (Vite) with TypeScript, React-router-dom, SCSS / SASS",
+    //         deployment: "Netlify"
+    //     },
+    //     {
+    //         id: "resourceful",
+    //         projectName: "Resourceful",
+    //         link: "https://resourceful.tips/",
+    //         linkTitle: "resourceful.tips",
+    //         image: "img url here",
+    //         description: "This was a team collaboration featuring some of my former classmates, as we endeavored to create a coding-resource sharing platform to provide an all-inclusive repository of programming knowledge based on our bootcamp curriculum, and libraries, API's, and frameworks that we've learned since graduating. We simulates sprints, an agile-development environment, and dug in deep to successfully use TypeScript on the front and backend. We also cut our teeth on MongoDB and AWS EC2 cloud servers.",
+    //         stack: "React (Vite) with TypeScript, Node.js, Express, MongoDB, AWS EC2",
+    //         deployment: "AWS EC2, "
+    //     },
+    //     {
+    //         id: "mytutor",
+    //         projectName: "My Language Tutor",
+    //         link: "https://github.com/austinwisdom/austin-wisdom-my-language-tutor",
+    //         linkTitle: "github repo",
+    //         image: "img url here",
+    //         description: "For my bootcamp's capstone project, I built an AI-language tutor capable of providing endless hours of conversation in various languages. Designed as a prototype for an ed-tech startup, it allows users to sharpen their foreign-language skills at 90% less than the cost of hiring a conversation tutor. I used OpenAI's GPT-4 API to power the AI tutor, and implemented Azure coginitive speech services to provide on-demand text-to-speech services. I designed and built this app in two weeks, and have not deployed it yet. In the near future I will take time to overhaul it using my post-bootcamp skills and deploy it to its domain, mylanguagetutor.io.",
+    //         stack: "React (Vite) with TypeScript, React-router-dom, Tailwind, MySQL, OpenAI, Microsoft Azure",
+    //         deployment: "Netlify, Fly.io"
+    //     }
+    // ]
+    // )
 
-    const clickHandler = (projectId:string) => {
+    // const clickHandler = (projectId:string) => {
 
-        const project = projects.find((id:any) => id.id === projectId)
-        setProjectModal(project)
-    }
+    //     const project = projects.find((id:any) => id.id === projectId)
+    //     setProjectModal(project)
+    // }
 
     return (
         <main className="bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url('./assets/images/logo/globeBg.svg')]">
