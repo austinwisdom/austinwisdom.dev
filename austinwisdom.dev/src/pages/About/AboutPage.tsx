@@ -1,27 +1,22 @@
 import { Link } from "react-router-dom";
 import awLogo from "../../assets/images/logo/aw.svg"
 
-
 const AboutPage = () => {
 
     return (
-        <main className="bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url('./assets/images/logo/globeBg.svg')]">
-            <section className="">
-            </section>
+        <main className="bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url('./assets/images/logo/globeBg2.svg')]">
             <div className="flex content-center items-center pt-8 animate-pulse">
                 <Link to={'/'}><img className='h-20' src={awLogo} /></Link>
             </div>
 
-            <div className="z-50">
-                    <h1 className="text-red-100 mt-36 sm:mt-0 text-4xl p-8">I'm Austin Wisdom <br/> and I love building things.</h1>
-                
-                <div className="bg-red-100 rounded-2xl sm:w-1/3 mx-7 h-full px-4 flex flex-col justify-center content-center p-4 my-10">
+            <div className="px-8">
+                <div className=" rounded-2xl sm:w-1/3 mx-7 h-full px-4 flex flex-col justify-center content-center p-4 my-10">
+                    <h1 className="text-red-100 mt-36 sm:mt-0 text-4xl py-8">I'm Austin Wisdom <br/> and I love building things.</h1>
                             <ul>
-                                
                                 <li className="py-2">
-                                    <p className="text-neutral-950 py-4">For as long as I can remember, I've loved building and creating, from Lego worlds as a child, to my first business venture (an educational YouTube channel) in my early twenties, and now software and applications.</p>
-                                    <p className="text-neutral-950 py-4">I thrive on taking my ideas and making them into tangible products, and with software engineering I've never felt more empowered to do so.</p>
-                                    <p className="text-neutral-950 py-4">Let's get connected and start talking about how I can help you bring your projects to life.</p>
+                                    <p className="text-red-100 py-4">For as long as I can remember, I've loved building and creating, from Lego worlds as a child, to my first business venture (an educational YouTube channel) in my early twenties, and now software and applications.</p>
+                                    <p className="text-red-100 py-4">I thrive on taking my ideas and making them into tangible products, and with software engineering I've never felt more empowered to do so.</p>
+                                    <p className="text-red-100 py-4">Let's get connected and start talking about how I can help you bring your projects to life.</p>
                                 </li>
                                 <li className="flex items-end">
                                     <a href="https://github.com/austinwisdom" aria-label="Follow on Github" target="_blank" className="p-1 group">
@@ -32,11 +27,10 @@ const AboutPage = () => {
                                     </a>
                                     <a className="px-2 text-l text-red-500 dark:text-red-500 transition hover:text-red-600" href="mailto: austin.n.wisdom@gmail.com">austin.n.wisdom@gmail.com</a>
                                 </li>
-            
-                                
                             </ul>
-                        </div>
+                </div>
             </div>
+                       
         </main>
     );
 };
