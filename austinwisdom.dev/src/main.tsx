@@ -6,6 +6,7 @@ import App from './App.tsx'
 import AboutPage from './pages/About/AboutPage.tsx';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage.tsx';
 import Header from './components/Header/Header.tsx';
+import Footer from './components/Footer/Footer.tsx';
 import './index.css'
 
 export enum ROUTES {
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path={ROUTES.ABOUT} element={<AboutPage />}/>
         <Route path={ROUTES.PROJECTS} element={<ProjectsPage />}/>
       </Routes>
+      <Footer/>
     </Router>
   </React.StrictMode>,
 )

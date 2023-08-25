@@ -9,22 +9,22 @@ const AboutPage = () => {
 
     const projects:any = ([
         {
-            id: "xequemate",
-            projectName: "Xeque Mate Compras",
+            id: "bio",
+            projectName: "From small town USA to world traveler",
             link: "https://xequematecompras.com.br/",
             linkTitle: "xequematecompras.com.br",
             image: "img url here",
-            description: "For this paid project I built the frontend of a Brazilian e-commerce platform that allows clients and suppliers to securely create an account to buy or sell imported hardware products at a discounted rate. I managed a team of 5 contractors while building the robust and secure front end of the application, in addition to connecting it to various API's and the backend server. Currently I'm learning Ruby, Ruby on Rails, and PosgreSQL in order to perform maintenance on the backend of the platform.",
-            stack: "React (Vite) with TypeScript, React-router-dom, SCSS / SASS",
-            deployment: "Netlify"
+            description: "Originally from Alabama, I've had the privilege of living in more than 10 different countries around the world, and have become a travel fanatic along with my amazing wife Carla. ",
+            description2: "I've realized that the most precious things in life are spending time with friends and family, and filling our time on earth with as many adventures as possible."
         },
         {
-            id: "ataraxia",
-            projectName: "Ataraxia",
+            id: "career",
+            projectName: "Started as a teacher now I'm here",
             link: "https://ataraxia.tokyo/",
             linkTitle: "ataraxia.tokyo",
             image: "",
-            description: "I designed and built this project as a way to develop my Vite and TypeScript skills. I chose to build my own world featuring an friendly AI named BIMO who tells his story on the homepage. It also includes an AI-art gallery, relaxing music, and non-traditional web design principles showcasing a Synthwave theme. In the near future I plan to integrate an online clothing store with products featuring the AI art in the gallery.",
+            description: "After graduating in International Affairs (without much idea of how to use that degree), I got my first teaching job at a private school. From there I continued my journey as a teacher in Ourense, Spain and started my first business, an educational YouTube channel.",
+            description2: "",
             stack: "React (Vite) with TypeScript, React-router-dom, SCSS / SASS",
             deployment: "Netlify"
         },
@@ -66,45 +66,29 @@ const AboutPage = () => {
             </div>
 
             <div className="z-50">
-                <ul className='bg-red-100 p-4 rounded-2xl sm:w-1/2 sm:p-0 mx-7 sm:h-20 px-4 flex flex-col justify-center content-center md:flex-row md:items-center my-10'>
-                    <li className='list-none text-neutral-950 mx-4 py-4 md:py-0'>
-                        <button onClick={()=> clickHandler("xequemate")}  className='transition hover:text-red-600 cursor-pointer'>xequematecompras.com.br
-                            {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
-                        </button>
-                    </li>
-                    <li className='list-none text-neutral-950 mx-4 py-4 md:py-0'>
-                        <button onClick={()=> clickHandler("ataraxia")} className='transition hover:text-red-600 cursor-pointer'>ataraxia.tokyo
-                          {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
-                        </button>
-                    </li>
-                    <li className='list-none text-neutral-950 mx-4 py-4 md:py-0'>
-                        <button onClick={()=> clickHandler("resourceful")} className='transition hover:text-red-600 cursor-pointer'>resourceful.tips
-                          {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
-                        </button>
-                    </li>
-                    <li className='list-none text-neutral-950 mx-4 py-4 md:py-0'>
-                        <button onClick={()=> clickHandler("mytutor")} className='transition hover:text-red-600 cursor-pointer'>mylanguagetutor.io
-                          {/* <span className="absolute inset-x-1 -bottom-px h-px w-full bg-gradient-to-r from red-500/0 via-red-500/40 to-red-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0"></span> */}
-                        </button>
-                    </li>
-                </ul>
-                    {/* <h1 className="text-red-500">what's happening?</h1> */}
-                    {projectModal && (
-                        <div className="bg-red-100 rounded-2xl sm:w-1/2 mx-7 h-full px-4 flex flex-col justify-center content-center p-4 my-10">
+                    <h1 className="text-red-100 mt-36 sm:mt-0 text-4xl p-8">I'm Austin Wisdom <br/> and I love building things.</h1>
+                
+                <div className="bg-red-100 rounded-2xl sm:w-1/3 mx-7 h-full px-4 flex flex-col justify-center content-center p-4 my-10">
                             <ul>
+                                
                                 <li className="py-2">
-                                    <h1 className="text-red-500">name: <span className="text-neutral-950">{projectModal.projectName}</span></h1>
+                                    <p className="text-neutral-950 py-4">For as long as I can remember, I've loved building and creating, from Lego worlds as a child, to my first business venture (an educational YouTube channel) in my early twenties, and now software and applications.</p>
+                                    <p className="text-neutral-950 py-4">I thrive on taking my ideas and making them into tangible products, and with software engineering I've never felt more empowered to do so.</p>
+                                    <p className="text-neutral-950 py-4">Let's get connected and start talking about how I can help you bring your projects to life.</p>
                                 </li>
-                                <li className="py-2">
-                                    <p className="text-red-500">desc: <span className="text-neutral-950">{projectModal.description}</span></p>
+                                <li className="flex items-end">
+                                    <a href="https://github.com/austinwisdom" aria-label="Follow on Github" target="_blank" className="p-1 group">
+                                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-red-500 dark:fill-red-500 transition group-hover:fill-red-600 dark:group-hover:fill-red-600"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/austinwisdom/" aria-label="Follow on LinkedIn" target="_blank" className="p-1 group">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-red-500 dark:fill-red-500 transition group-hover:fill-red-600 dark:group-hover:fill-red-600"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                                    </a>
+                                    <a className="px-2 text-l text-red-500 dark:text-red-500 transition hover:text-red-600" href="mailto: austin.n.wisdom@gmail.com">austin.n.wisdom@gmail.com</a>
                                 </li>
-                                <li className="py-2 text-red-500">URL: <a target="_blank" className="text-neutral-950 hover:text-red-500" href={projectModal.link}>{projectModal.linkTitle}</a></li>
-                                <li className="py-2">
-                                    <p className="text-red-500">stack: <span className="text-neutral-950">{projectModal.stack}</span></p>
-                                </li>
+            
+                                
                             </ul>
                         </div>
-                    )}
             </div>
         </main>
     );
