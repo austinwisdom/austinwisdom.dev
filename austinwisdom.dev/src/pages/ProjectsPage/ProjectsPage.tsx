@@ -58,7 +58,7 @@ const ProjectsPage = () => {
     }
 
     return (
-        <main className="bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url('./assets/images/logo/projectsImgGray.svg')]">
+        <main className="bg-neutral-900 w-screen h-fit bg-contain bg-no-repeat bg-[url('./assets/images/logo/projectsImgGray.svg')]">
             <section className="">
             </section>
             <div className="flex content-center items-center pt-8 animate-pulse">

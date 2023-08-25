@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
 import awLogo from "../../assets/images/logo/aw.svg"
+// import profilePic from "../../assets/images/logo/profilePic.jpg"
 
 const AboutPage = () => {
 
     return (
-        <main className="bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url('./assets/images/logo/globeBg2.svg')]">
-            <div className="flex content-center items-center pt-8 animate-pulse">
-                <Link to={'/'}><img className='h-20' src={awLogo} /></Link>
+        <main className="bg-neutral-900 w-screen h-fit bg-contain bg-no-repeat bg-[url('./assets/images/logo/globeBg.svg')] sm:bg-[url('./assets/images/logo/globeBg2.svg')]">
+            <div className="flex pt-8 ">
+                <div className="flex content-start items-start animate-pulse">
+                    <Link to={'/'}><img className='h-20' src={awLogo} /></Link>
+                </div>
+                
             </div>
 
-            <div className="px-8">
-                <div className=" rounded-2xl sm:w-1/3 mx-7 h-full px-4 flex flex-col justify-center content-center p-4 my-10">
+            <div className="px-16">
+                <div className=" rounded-2xl sm:w-1/3 mx-7 h-full px-4 flex flex-col justify-center content-center my-10">
                     <h1 className="text-red-100 mt-36 sm:mt-0 text-4xl py-8">I'm Austin Wisdom <br/> and I love building things.</h1>
-                            <ul>
+                            <ul className="pb-8">
                                 <li className="py-2">
                                     <p className="text-red-100 py-4">For as long as I can remember, I've loved building and creating, from Lego worlds as a child, to my first business venture (an educational YouTube channel) in my early twenties, and now software and applications.</p>
                                     <p className="text-red-100 py-4">I thrive on taking my ideas and making them into tangible products, and with software engineering I've never felt more empowered to do so.</p>
