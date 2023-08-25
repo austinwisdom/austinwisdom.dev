@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import awLogo from "../../assets/images/logo/aw.svg"
-// import profilePic from "../../assets/images/logo/profilePic.jpg"
 
 const AboutPage = () => {
 
