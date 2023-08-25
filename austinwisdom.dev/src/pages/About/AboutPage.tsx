@@ -1,8 +1,95 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import awLogo from "../../assets/images/logo/aw.svg"
+
 
 const AboutPage = () => {
+
+    // const [projectModal, setProjectModal]:[projectModal:any, setProjectModal:Function] = useState("")
+
+    // const projects:any = ([
+    //     {
+    //         id: "bio",
+    //         projectName: "From small town USA to world traveler",
+    //         link: "https://xequematecompras.com.br/",
+    //         linkTitle: "xequematecompras.com.br",
+    //         image: "img url here",
+    //         description: "Originally from Alabama, I've had the privilege of living in more than 10 different countries around the world, and have become a travel fanatic along with my amazing wife Carla. ",
+    //         description2: "I've realized that the most precious things in life are spending time with friends and family, and filling our time on earth with as many adventures as possible."
+    //     },
+    //     {
+    //         id: "career",
+    //         projectName: "Started as a teacher now I'm here",
+    //         link: "https://ataraxia.tokyo/",
+    //         linkTitle: "ataraxia.tokyo",
+    //         image: "",
+    //         description: "After graduating in International Affairs (without much idea of how to use that degree), I got my first teaching job at a private school. From there I continued my journey as a teacher in Ourense, Spain and started my first business, an educational YouTube channel.",
+    //         description2: "",
+    //         stack: "React (Vite) with TypeScript, React-router-dom, SCSS / SASS",
+    //         deployment: "Netlify"
+    //     },
+    //     {
+    //         id: "resourceful",
+    //         projectName: "Resourceful",
+    //         link: "https://resourceful.tips/",
+    //         linkTitle: "resourceful.tips",
+    //         image: "img url here",
+    //         description: "This was a team collaboration featuring some of my former classmates, as we endeavored to create a coding-resource sharing platform to provide an all-inclusive repository of programming knowledge based on our bootcamp curriculum, and libraries, API's, and frameworks that we've learned since graduating. We simulates sprints, an agile-development environment, and dug in deep to successfully use TypeScript on the front and backend. We also cut our teeth on MongoDB and AWS EC2 cloud servers.",
+    //         stack: "React (Vite) with TypeScript, Node.js, Express, MongoDB, AWS EC2",
+    //         deployment: "AWS EC2, "
+    //     },
+    //     {
+    //         id: "mytutor",
+    //         projectName: "My Language Tutor",
+    //         link: "https://github.com/austinwisdom/austin-wisdom-my-language-tutor",
+    //         linkTitle: "github repo",
+    //         image: "img url here",
+    //         description: "For my bootcamp's capstone project, I built an AI-language tutor capable of providing endless hours of conversation in various languages. Designed as a prototype for an ed-tech startup, it allows users to sharpen their foreign-language skills at 90% less than the cost of hiring a conversation tutor. I used OpenAI's GPT-4 API to power the AI tutor, and implemented Azure coginitive speech services to provide on-demand text-to-speech services. I designed and built this app in two weeks, and have not deployed it yet. In the near future I will take time to overhaul it using my post-bootcamp skills and deploy it to its domain, mylanguagetutor.io.",
+    //         stack: "React (Vite) with TypeScript, React-router-dom, Tailwind, MySQL, OpenAI, Microsoft Azure",
+    //         deployment: "Netlify, Fly.io"
+    //     }
+    // ]
+    // )
+
+    // const clickHandler = (projectId:string) => {
+
+    //     const project = projects.find((id:any) => id.id === projectId)
+    //     setProjectModal(project)
+    // }
+
     return (
-        <main className="bg-neutral-900 w-screen h-screen">
+        <main className="bg-neutral-900 w-screen h-screen bg-contain bg-no-repeat bg-[url('./assets/images/logo/globeBg.svg')]">
+            <section className="">
+            </section>
+            <div className="flex content-center items-center pt-8 animate-pulse">
+                <Link to={'/'}><img className='h-20' src={awLogo} /></Link>
+            </div>
+
+            <div className="z-50">
+                    <h1 className="text-red-100 mt-36 sm:mt-0 text-4xl p-8">I'm Austin Wisdom <br/> and I love building things.</h1>
+                
+                <div className="bg-red-100 rounded-2xl sm:w-1/3 mx-7 h-full px-4 flex flex-col justify-center content-center p-4 my-10">
+                            <ul>
+                                
+                                <li className="py-2">
+                                    <p className="text-neutral-950 py-4">For as long as I can remember, I've loved building and creating, from Lego worlds as a child, to my first business venture (an educational YouTube channel) in my early twenties, and now software and applications.</p>
+                                    <p className="text-neutral-950 py-4">I thrive on taking my ideas and making them into tangible products, and with software engineering I've never felt more empowered to do so.</p>
+                                    <p className="text-neutral-950 py-4">Let's get connected and start talking about how I can help you bring your projects to life.</p>
+                                </li>
+                                <li className="flex items-end">
+                                    <a href="https://github.com/austinwisdom" aria-label="Follow on Github" target="_blank" className="p-1 group">
+                                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-red-500 dark:fill-red-500 transition group-hover:fill-red-600 dark:group-hover:fill-red-600"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/austinwisdom/" aria-label="Follow on LinkedIn" target="_blank" className="p-1 group">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-red-500 dark:fill-red-500 transition group-hover:fill-red-600 dark:group-hover:fill-red-600"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+                                    </a>
+                                    <a className="px-2 text-l text-red-500 dark:text-red-500 transition hover:text-red-600" href="mailto: austin.n.wisdom@gmail.com">austin.n.wisdom@gmail.com</a>
+                                </li>
             
+                                
+                            </ul>
+                        </div>
+            </div>
         </main>
     );
 };
