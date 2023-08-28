@@ -3,10 +3,11 @@
 const PageNotFoundPage = () => {
     return (
         <main className='bg-neutral-900 w-screen h-screen'>
-  <div className='w-screen h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'>
+  <div className='w-screen h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/404.svg")]'>
       <section id='module' className='flex animate-none justify-center sm:justify-end'>
         <div className='my-96 sm:mx-40 sm:my-40 animate-none'>
-          <h1 className='text-red-100 animate-none text-6xl mt-14 sm:mt-0 transition hover:text-white'>404 Page Not Found</h1>
+          <h1 className='text-red-100 animate-none text-6xl mt-14 sm:mt-0 transition hover:text-white'>Oops! 404</h1>
+          <h1 className='text-red-100 animate-none text-6xl mt-14 sm:mt-0 transition hover:text-white'>Page Not Found</h1>
           {/* <Link to="/" className='text-red-100 py-16 animate-none text-xl hover:cursor-pointer transition hover:text-white'>Take me home please!</Link> */}
           
           <div className="flex gap-6 mt-6 mb-12">

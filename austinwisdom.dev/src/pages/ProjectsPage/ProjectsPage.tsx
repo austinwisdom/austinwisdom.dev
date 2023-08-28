@@ -14,7 +14,7 @@ const ProjectsPage = () => {
             link: "https://xequematecompras.com.br/",
             linkTitle: "xequematecompras.com.br",
             image: "img url here",
-            description: "For this paid project I built the frontend of a Brazilian e-commerce platform that allows clients and suppliers to securely create an account to buy or sell imported hardware products at a discounted rate. I managed a team of 5 contractors while building the robust and secure front end of the application, in addition to connecting it to various API's and the backend server. Currently I'm learning Ruby, Ruby on Rails, and PosgreSQL in order to perform maintenance on the backend of the platform.",
+            description: "This was my biggest and most challenging project yet! I built the frontend of a Brazilian e-commerce platform that allows clients and suppliers to securely create an account to buy or sell imported hardware products at exclusively discounted rates. I managed a team of 5 contractors while building the robust and secure front end of the application, in addition to connecting it to various API's and the backend server. We successfully built and tested the entire project within two months to meet the launch deadline, which happened on August 28th at one of the largest expo events in Brazil! Currently I'm learning Ruby, Ruby on Rails, and PosgreSQL in order to perform maintenance on the backend of the platform.",
             stack: "React (Vite) with TypeScript, React-router-dom, SCSS / SASS",
             deployment: "Netlify"
         },
