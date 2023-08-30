@@ -1,4 +1,6 @@
-# $\textcolor{red}{\textsf{[austinwisdom.dev] (https://austinwisdom.dev/)}}$
+# $\textcolor{red}{\textsf{My Porfolio Website}}$
+
+Access [austinwisdom.dev] (https://austinwisdom.dev/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f66a4cbd-d8b2-40b1-8462-6663b995b28b/deploy-status)](https://app.netlify.com/sites/phenomenal-stroopwafel-951f22/deploys)
 
