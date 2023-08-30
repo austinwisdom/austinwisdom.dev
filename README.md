@@ -1,6 +1,7 @@
 # $\textcolor{red}{\textsf{My Porfolio Website}}$
 
 Access [austinwisdom.dev] (https://austinwisdom.dev/).
+This site was built using [GitHub Pages](https://pages.github.com/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f66a4cbd-d8b2-40b1-8462-6663b995b28b/deploy-status)](https://app.netlify.com/sites/phenomenal-stroopwafel-951f22/deploys)
 
