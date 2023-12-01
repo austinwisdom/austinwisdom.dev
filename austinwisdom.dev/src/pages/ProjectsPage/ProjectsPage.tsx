@@ -61,11 +61,11 @@ const ProjectsPage = () => {
         <main className="bg-neutral-900 w-screen min-h-screen h-fit bg-contain bg-no-repeat bg-[url('./assets/images/logo/projectsImgGray.svg')]">
             <section className="">
             </section>
-            <div className="flex content-center items-center pt-8 animate-pulse">
+            <div className="flex ml-5 content-center items-center pt-8 animate-pulse">
                 <Link to={'/'}><img className='h-20' src={awLogo} /></Link>
             </div>
 
-            <div className="z-50 mt-44 sm:mt-0">
+            <div className="z-50 mt-44 sm:mt-0 ml-10">
                 <ul className='bg-red-100 p-4 rounded-2xl sm:w-1/2 sm:p-0 mx-7 sm:h-20 px-4 flex flex-col justify-center content-center items-center md:flex-row md:items-center my-10'>
                     <li className='list-none text-lg sm:text-base text-neutral-950 mx-4 py-4 md:py-0'>
                         <button onClick={()=> clickHandler("xequemate")}  className='transition hover:text-red-600 cursor-pointer'>xequematecompras.com.br

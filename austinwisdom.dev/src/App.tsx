@@ -1,4 +1,5 @@
 import './App.css'
+import logoImage from './assets/images/logo/aw.svg'
 
 function App() {
   const background:any = document.querySelector('#module')
@@ -7,12 +8,16 @@ function App() {
   root.addEventListener('mousemove', (e) => {
     const x = e.clientX,
     y = e.clientY;
-    background.style.transform = `translate(${-x / 40}px,${-y / 40}px)`;
+    background.style.transform = `translate(${-x / 80}px,${-y / 80}px)`;
   });
 
   return (
   <main className='bg-neutral-900 w-screen h-screen'>
-  <div className='w-screen h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'>
+  {/* <div className='w-screen h-screen bg-contain bg-no-repeat bg-[url("./assets/images/logo/aw.svg")]'> */}
+  <div className='w-screen h-screen flex'>
+    <section>
+      <img className='animate-pulse mt-20 ml-20 w-full' src={logoImage} />
+    </section>
       <section id='module' className='flex animate-none justify-center sm:justify-end'>
         <div className='my-96 sm:mx-40 sm:my-40 animate-none'>
           <h1 className='text-red-100 animate-none text-6xl hover:cursor-default mt-14 sm:mt-0 transition hover:text-white'>Founder,</h1>
