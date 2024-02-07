@@ -1,6 +1,9 @@
-import { useRef, useEffect  } from 'react';
+//@ts-nocheck
+import { useRef, useEffect } from 'react';
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { Canvas } from '@react-three/fiber';
+
+import SphereComponent from '../../components/Threejs/SphereComponent';
 
 
 const AboutPageThreejs = () => {
@@ -36,7 +39,11 @@ const AboutPageThreejs = () => {
     }, []);
 
     return (
-      <main ref={refContainer}></main>
+    <main className='h-screen'>
+        <Canvas frameloop='demand' camera={{position: [-3, 0, 30]}}>
+            <SphereComponent />
+        </Canvas>
+    </main>
   
     );
   }
