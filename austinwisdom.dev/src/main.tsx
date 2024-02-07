@@ -9,12 +9,14 @@ import PageNotFoundPage from './pages/PageNotFoundPage/PageNotFoundPage.tsx';
 import Header from './components/Header/Header.tsx';
 import Footer from './components/Footer/Footer.tsx';
 import './index.css'
+import AboutPageThreejs from './pages/AboutPageThreejs/AboutPageThreejs.tsx';
 
 export enum ROUTES {
   HOME = '/',
   ABOUT = '/about',
   PROJECTS = '/projects',
-  PAGENOTFOUND = '*'
+  PAGENOTFOUND = '*',
+  ABOUTTHREEJS = 'about-threejs'
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -26,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path={ROUTES.ABOUT} element={<AboutPage />}/>
         <Route path={ROUTES.PROJECTS} element={<ProjectsPage />}/>
         <Route path={ROUTES.PAGENOTFOUND} element={<PageNotFoundPage />}/>
+        <Route path={ROUTES.ABOUTTHREEJS} element={<AboutPageThreejs />}/>
       </Routes>
       <Footer/>
     </Router>

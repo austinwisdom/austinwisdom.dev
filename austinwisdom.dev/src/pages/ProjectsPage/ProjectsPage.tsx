@@ -96,7 +96,7 @@ const ProjectsPage = () => {
                                     <h1 className="text-red-500">name: <span className="text-neutral-950">{projectModal.projectName}</span></h1>
                                 </li>
                                 <li className="py-2">
-                                    <p className="text-red-500">desc: <span className="text-neutral-950">{projectModal.description}</span></p>
+                                    <p className="text-red-500"><span className="text-neutral-950">{projectModal.description}</span></p>
                                 </li>
                                 <li className="py-2 text-red-500">URL: <a target="_blank" className="text-neutral-950 hover:text-red-500" href={projectModal.link}>{projectModal.linkTitle}</a></li>
                                 <li className="py-2">
